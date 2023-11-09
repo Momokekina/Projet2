@@ -1,4 +1,4 @@
-/****** General ***********/
+/******General***********/
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -8,10 +8,9 @@
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
 
-  /*Text configuration
-  --header-font: "Railway";
-  --body-font: "Railway";
-  */
+  /*Text configuration*/
+  --title-font-style: 18px;
+  --text-font-style: 16px;
 }
 
 .fa-solid {
@@ -73,33 +72,36 @@ a {
 }
 
 .body-navbar img {
-  width: 6em;
-  height: 2em;
-  margin-top: -20px;
-  margin-left: -30px;
-  padding: 20px;
+  width: 61.09px;
+  height: 19px;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: -10px;
 }
 
 .navbar a {
-  font-size: 16px;
-  margin-left: 40px;
-  padding: 15px;
+  font-size: var(--text-font-style);
+  margin-left: 50px;
+  padding: 14px;
+  gap: 68px;
 }
 
 .navbar a:hover {
   color: var(--main-color);
   border-top: 1px solid var(--main-color);
+  border-width: 2px;
 }
 
 /*****Search*****/
 .search-header h1 {
   font-size: 22px;
+  font-weight: 700;
 }
 .search-header p {
-  font-size: 16px;
+  font-size: var(--text-font-style);
+  font-weight: 400;
 }
-
-/*****Filters*****/
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {

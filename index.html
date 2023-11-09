@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr,en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,13 +41,14 @@
             <p>En plein centre ville ou en pleine nature</p>
           </header>
 
-          <form class="search-bar">
+          <form action="#" class="search-bar">
             <div class="search-bar-icon">
               <i class="fa-solid fa-location-dot"></i>
             </div>
             <input type="search" placeholder="Marseille, France" />
-            <button>
-              <p>Rechercher</p>
+
+            <button type="submit">
+              Rechercher
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
@@ -55,22 +56,21 @@
 
           <!--Filters-->
           <div class="filters">
-            <p>Filtres</p>
-            <button>
+            <p class="filters-title">Filtres</p>
+            <button type="button" class="filters-button">
               <i class="fa-solid fa-money-bill-wave"></i>
-              <p>Économique</p>
+              Économique
             </button>
-            <button>
-              <i class="fa-solid fa-child-reaching"></i>
-              <p>Familial</p>
+            <button type="button" class="filters-button">
+              <i class="fa-solid fa-child-reaching"></i>Familial
             </button>
-            <button>
+            <button type="button" class="filters-button">
               <i class="fa-solid fa-heart"></i>
-              <p>Romantique</p>
+              Romantique
             </button>
-            <button>
+            <button type="button" class="filters-button">
               <i class="fa-solid fa-dog"></i>
-              <p>Animaux autorisés</p>
+              Animaux autorisés
             </button>
           </div>
           <!--Filters-->
@@ -78,7 +78,7 @@
           <!--Infos-->
           <div class="search-info">
             <div class="search-info-icon">
-              <i class="fa-solid fa-info"></i>
+              <i class="fa-solid fa-info fa-xs"></i>
             </div>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
