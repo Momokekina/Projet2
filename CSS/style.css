@@ -32,6 +32,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .section-title {
@@ -103,6 +104,113 @@ a {
   font-weight: 400;
 }
 
+/*****Barnav*****/
+.search-bar {
+  display: flex;
+}
+#location-dot {
+  color: #000000;
+}
+.search-bar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 49px;
+  border-radius: 15px 0px 0px 15px;
+  background-color: var(--main-bg-color);
+}
+.search-bar input {
+  border-top: 1px solid var(--main-bg-color);
+  border-bottom: 1px solid var(--main-bg-color);
+  border-left: transparent;
+  border-right: transparent;
+  height: 49px;
+  width: 195px;
+}
+::placeholder {
+  color: #000000;
+  font-weight: 700;
+  font-size: var(--title-font-style);
+  text-align: center;
+}
+
+.search-bar button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-color);
+  border-radius: 0px 15px 15px 0px;
+  height: 49px;
+  width: 132px;
+  color: #fff;
+  font-size: var(--text-font-style);
+  font-weight: 700;
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+#enter {
+  display: none;
+}
+
+/*****Filters*****/
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.filters-title {
+  font-size: var(--title-font-style);
+  font-weight: 700;
+}
+
+.filters i {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filters-button {
+  font-size: var(--text-font-style);
+  font-weight: 700;
+  background-color: #fff;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  padding: 4px 19px;
+  height: 50px;
+}
+.filters-button:hover,
+.filters-button:active {
+  background-color: #deebff;
+}
+
+/*****Details*****/
+.search-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--text-font-style);
+  padding-bottom: 35px;
+}
+.search-info-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+  border: 1.5px solid var(--main-bg-color);
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
@@ -169,10 +277,12 @@ a {
 /******Footer******/
 
 .footer {
-  background-color: #f2f2f2;
-  margin-top: 50px;
-  padding-left: 15px;
+  background-color: var(--main-bg-color);
+  margin-top: 20px;
+  padding: 20px;
+  padding-top: 10px;
   display: flex;
+  height: 163px;
 }
 
 .footer div {
@@ -183,7 +293,7 @@ a {
 .footer-links2 a,
 .footer-links3 a {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
