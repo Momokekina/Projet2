@@ -49,10 +49,11 @@ a {
 
 .card img {
   object-fit: cover;
+  object-fit: center;
 }
 
 .card-title {
-  font-size: 16px;
+  font-size: var(--text-font-style);
 }
 
 .euro {
@@ -73,9 +74,8 @@ a {
 }
 
 .body-navbar img {
-  width: 61.09px;
+  width: 3.8rem;
   height: 19px;
-  display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-left: -10px;
@@ -188,8 +188,7 @@ a {
   padding: 4px 19px;
   height: 50px;
 }
-.filters-button:hover,
-.filters-button:active {
+.filters-button:hover {
   background-color: #deebff;
 }
 
@@ -209,6 +208,47 @@ a {
   height: 24px;
   border-radius: 20px;
   border: 1.5px solid var(--main-bg-color);
+}
+
+/******Hostings******/
+.hostings-title {
+  font-size: 22px;
+}
+/*White background*/
+.hostings {
+  width: 250px;
+  height: 207px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: 60% 60%;
+}
+/*Modify text position with image*/
+.hosting {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/*Modify text position*/
+.rooms {
+  width: 100%;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  /***Pourquoi?***/
+  box-sizing: border-box;
+}
+.room1 p {
+  margin-bottom: 8px;
 }
 
 /****** Hebergements And Populaires ***********/
